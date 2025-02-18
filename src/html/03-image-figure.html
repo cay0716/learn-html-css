@@ -27,6 +27,9 @@
       height="50"
     />
     <br />
+    <!-- aria-label은 주로 버튼, 링크, 폼 요소에서 사용
+     요소 이름을 강제로 읽음.
+     툴팁으로 안 보임임 -->
     <svg
       aria-label="1대1 채팅"
       class="h-12 w-12"
@@ -35,7 +38,10 @@
       height="50"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <!-- <title>1대1 채팅</title> -->
+      <!-- title은 svg 이미지에서 사용
+       스크린리더에서 부가적으로 읽음
+       툴팁으로 보임 -->
+      <title>1대1 채팅</title>
       <defs>
         <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a">
           <stop stop-color="#2397B3" offset="0%"></stop>

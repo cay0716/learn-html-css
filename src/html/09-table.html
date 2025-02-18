@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>테이블</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid currentColor; /**/
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>테이블</h1>
+    <table>
+      <caption>
+        멋쟁이 사자처럼 프론트엔드 13기 스텝
+      </caption>
+      <colgroup>
+        <col />
+        <col span="2" />
+        <col />
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col">번호</th>
+          <th scope="col">강사</th>
+          <th scope="col">멘토</th>
+          <th scope="col">운영</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1번</td>
+          <td>슬비쌤</td>
+          <td>유진혁</td>
+          <td>정재인</td>
+        </tr>
+        <tr>
+          <td>1번</td>
+          <td>슬비쌤</td>
+          <td>유진혁</td>
+          <td>정재인</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>2명</td>
+          <td>2명</td>
+          <td>2명</td>
+          <td>2명</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <table>
+      <tr></tr>
+    </table>
+
+    <table>
+      <caption>
+        입문자를 위한 깃과 html css 과정
+        <span
+          >학습시간 난이도 교육비 지원 평가항목 수료기준 정원 교재 정보 등을
+          나타냄</span
+        >
+      </caption>
+      <tr>
+        <!-- headers 속성은 테이블 내의 <td>(데이터 셀)가 어떤 <th>(제목 셀)과 연결되는지 지정하는 속성
+        특히, 접근성(스크린 리더 사용 시)에 도움을 줌 -->
+        <th id="study-time">학습시간</th>
+        <td headers="study-time">09:00~17:00</td>
+        <th id="">난이도</th>
+        <td headers="">초급</td>
+      </tr>
+      <tr>
+        <th id="">교육비지원</th>
+        <td headers="">09:00~17:00</td>
+        <th id=">평가항목</th>
+        <td headers="">출석률 100%</td>
+      </tr>
+      <tr>
+        <th id="">수료기준</th>
+        <td headers="">총 80점 이상 수료료</td>
+        <th id="">정원</th>
+        <td headers="">24명</td>
+      </tr>
+      <tr>
+        <th id="">교재정보보</th>
+        <td colspan="3" headers="">
+          입문자를 위한 git과 html&css html&css 웹사이트 개발과 디자인 기초
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
