@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>픽처, 소리 요소</title>
+  </head>
+  <body>
+    <!-- srcset, sizes 속성 -->
+    <img
+      srcset="
+        /src/assets/logo/netflix@1x.png 1x,
+        /src/assets/logo/netflix@2x.png 2x
+      "
+      src="/src/assets/logo/netflix@1x.png"
+      alt="넷플릭스"
+    />
+    <!-- 이미지 형식식 -->
+    <img
+      src="/src/assets/logo/netflix@1x.png"
+      srcset="
+        /src/assets/logo/netflix@1x.webp 1x,
+        /src/assets/logo/netflix@2x.webp 2x
+      "
+      alt="넷플릭스"
+    />
+
+    <h2>W Descriptor 예시</h2>
+    <!-- figure, picture 차이
+     figure : caption(설명)이 필요한 요소
+     pocture: 이미지 요소소 -->
+    <!-- <figure>
+      <picture>
+        <img
+          src="/src/assets/rwd/small-550.jpg"
+          alt=""
+          srcset="
+            /src/assets/rwd/small-550.jpg    550w,
+            /src/assets/rwd/medium-1024.jpg 1024w,
+            /src/assets/rwd/large-1600.jpg  1600w,
+            /src/assets/rwd/normal-1920.jpg 1920w"
+          "
+          sizes="(max-width: 768px) 550px, 100vw"
+        />
+      </picture>
+      <figcaption></figcaption>
+    </figure> -->
+
+    <!-- 밑에 1920을 넘어가면 small이 뜸 왜그런거야 그리고 밑의 소스들을 설명해줘줘 -->
+    <picture>
+      <source
+        srcset="/src/assets/rwd/small-550.jpg 550w"
+        media="(max-width: 768px)"
+      />
+      <source
+        srcset="/src/assets/rwd/medium-1024.jpg 1024w"
+        media="(max-width: 1024px)"
+      />
+      <source
+        srcset="/src/assets/rwd/large-1600.jpg 1600w"
+        media="(max-width: 1600px)"
+      />
+      <source
+        srcset="/src/assets/rwd/normal-1920.jpg 1920w"
+        media="(min-width: 1920px)"
+      />
+      <img src="/src/assets/rwd/small-550.jpg" alt="" />
+    </picture>
+  </body>
+</html>

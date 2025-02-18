@@ -5,5 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>섹션과 메인 요소</title>
   </head>
-  <body></body>
+  <body>
+    <!-- wari-aria role
+     아티클: role="article", 헤더: role="banner",
+     네비: role="navigation", 메인: role="main" 
+     어사이드: role="complementary"-->
+    <header>머리말</header>
+    <nav>메뉴</nav>
+    <main>
+      <section>콘텐츠 섹션</section>
+      <section>콘텐츠 섹션</section>
+    </main>
+    <aside>부가정보</aside>
+    <footer>바닥글</footer>
+
+    <!-- --------------- 강사님 버전-------------------- -->
+    <header class="header">본문 헤더</header>
+    <nav class="navigation">네비게이션</nav>
+    <main class="content">
+      <section class="card">
+        <header>섹션 헤더</header>
+        <p>...</p>
+        <footer>섹션 푸터</footer>
+      </section>
+      <!-- 아티클: 완결되는 정보, 독립된 콘텐츠 -->
+      <article class="product">
+        <header>섹션 헤더</header>
+        <p>...</p>
+        <footer>섹션 푸터</footer>
+      </article>
+    </main>
+    <aside class="sidebar">부가 콘텐츠</aside>
+    <footer class="footer">본문 푸터</footer>
+    <div role="contentinfo" class="footer">본문 푸터</div>
+  </body>
 </html>
